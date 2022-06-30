@@ -36,18 +36,17 @@ export default function Navbar(props) {
           >
             <ul className="flex flex-col lg:flex-row list-none mr-auto">
               <li className="flex items-center">
-                <a
-                  className="lg:text-white lg:hover:text-blueGray-200 text-blueGray-700 px-3 py-4 lg:py-2 flex items-center text-xs uppercase font-bold"
-                  href="/auth/login"
-                >
-                  <i className="lg:text-blueGray-200 text-blueGray-400 fas fa-sign-in-alt text-lg leading-lg mr-2" />{" "}
-                  Login
-                </a>
+                <div className="lg:text-white lg:hover:text-blueGray-200 text-blueGray-700 px-3 py-4 lg:py-2 flex items-center text-xs uppercase font-bold">
+                  <Link to={"/auth/login"}>
+                    <i className="lg:text-blueGray-200 text-blueGray-400 fas fa-sign-in-alt text-lg leading-lg mr-2" />{" "}
+                    Login
+                  </Link>
+                </div>
               </li>
               <li className="flex items-center">
                 <a
                   className="lg:text-white lg:hover:text-blueGray-200 text-blueGray-700 px-3 py-4 lg:py-2 flex items-center text-xs uppercase font-bold"
-                  href="/auth/register"
+                  href="auth/register"
                 >
                   <i className="lg:text-blueGray-200 text-blueGray-400 fas fa-user-plus text-lg leading-lg mr-2" />{" "}
                   Registro
