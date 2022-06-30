@@ -15,12 +15,7 @@ export default function Navbar() {
             className="text-white text-sm uppercase hidden lg:inline-block font-semibold"
             onClick={(e) => e.preventDefault()}
           >
-            <Link
-              className="text-white text-sm font-bold leading-relaxed inline-block mr-4 py-2 whitespace-nowrap uppercase"
-              to="/admin/dashboard"
-            >
-              Dashboard
-            </Link>
+            <Link to="/admin/dashboard">Dashboard</Link>
           </div>
           {/* Form */}
           <form className="md:flex hidden flex-row flex-wrap items-center lg:ml-auto mr-3">

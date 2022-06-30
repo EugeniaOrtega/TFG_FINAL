@@ -1,6 +1,7 @@
 /*eslint-disable*/
 import UserDropdown from "components/Dropdowns/UserDropdown";
 import React from "react";
+import { Link } from "react-router-dom";
 
 // components
 
@@ -28,36 +29,36 @@ export default function Navbar(props) {
           >
             <ul className="flex flex-col lg:flex-row list-none mr-auto">
               <li className="flex items-center">
-                <div className="hover:text-white text-white px-3 py-4 lg:py-2 flex items-center text-xs uppercase font-bold lg:hover:text-blueGray-200">
+                <a className="hover:text-white text-white px-3 py-4 lg:py-2 flex items-center text-xs uppercase font-bold lg:hover:text-blueGray-200">
                   <Link to={"/admin/settings"}>
                     <i className="text-blueGray-200 fas fa-cog text-lg leading-lg mr-2" />{" "}
                     Configuración
                   </Link>
-                </div>
+                </a>
               </li>
               <li className="flex items-center">
-                <div className="hover:text-white text-white px-3 py-4 lg:py-2 flex items-center text-xs uppercase font-bold lg:hover:text-blueGray-200">
+                <a className="hover:text-white text-white px-3 py-4 lg:py-2 flex items-center text-xs uppercase font-bold lg:hover:text-blueGray-200">
                   <Link to={"/admin/dashboard"}>
                     <i className="text-blueGray-200 fas fa-chart-line text-lg leading-lg mr-2" />{" "}
                     Dashboard
                   </Link>
-                </div>
+                </a>
               </li>
               <li className="flex items-center">
-                <div className="hover:text-white text-white px-3 py-4 lg:py-2 flex items-center text-xs uppercase font-bold lg:hover:text-blueGray-200">
+                <a className="hover:text-white text-white px-3 py-4 lg:py-2 flex items-center text-xs uppercase font-bold lg:hover:text-blueGray-200">
                   <Link to={"/admin/tables"}>
                     <i className="text-blueGray-200 fas fa-table text-lg leading-lg mr-2" />{" "}
                     Tablas
                   </Link>
-                </div>
+                </a>
               </li>
               <li className="flex items-center">
-                <div className="hover:text-white text-white px-3 py-4 lg:py-2 flex items-center text-xs uppercase font-bold lg:hover:text-blueGray-200">
+                <a className="hover:text-white text-white px-3 py-4 lg:py-2 flex items-center text-xs uppercase font-bold lg:hover:text-blueGray-200">
                   <Link to={"/admin/maps"}>
                     <i className="text-blueGray-200 far fa-map text-lg leading-lg mr-2" />{" "}
                     Mapas
                   </Link>
-                </div>
+                </a>
               </li>
             </ul>
             <ul className="flex-col md:flex-row list-none items-center hidden md:flex">

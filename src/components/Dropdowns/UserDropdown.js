@@ -56,27 +56,21 @@ const UserDropdown = () => {
           "bg-white text-base z-50 float-left py-2 list-none text-left rounded shadow-lg min-w-48"
         }
       >
-        <div className="lg:text-black-200 lg:hover:text-blueGray-200 text-black-300 px-3 py-4 lg:py-2 flex items-center text-xs uppercase font-bold">
-          <Link
-            className="text-white text-sm font-bold leading-relaxed inline-block mr-4 py-2 whitespace-nowrap uppercase"
-            to="/profile"
-          >
+        <a className="lg:text-black-200 lg:hover:text-blueGray-200 text-black-300 px-3 py-4 lg:py-2 flex items-center text-xs uppercase font-bold">
+          <Link to="/profile">
             <i className="lg:text-blueGray-800 text-blueGray-800 fas fa-user text-lg leading-lg mr-2" />{" "}
             Perfil
           </Link>
-        </div>
-        <div
+        </a>
+        <a
           className="lg:text-black-200 lg:hover:text-blueGray-200 text-black-300 px-3 py-4 lg:py-2 flex items-center text-xs uppercase font-bold"
           onClick={handleLogout}
         >
-          <Link
-            className="text-white text-sm font-bold leading-relaxed inline-block mr-4 py-2 whitespace-nowrap uppercase"
-            to="/"
-          >
+          <Link to="/">
             <i className="lg:text-blueGray-800 text-blueGray-800 fas fa-sign-out-alt text-lg leading-lg mr-2" />{" "}
             Cerrar sesion
           </Link>
-        </div>
+        </a>
       </div>
     </>
   );

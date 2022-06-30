@@ -34,7 +34,7 @@ export default function Footer() {
                 De momento solo estamos en :.
               </h5>
               <div className="mt-6 lg:mb-0 mb-6">
-                <div
+                <a
                   href="/https://www.linkedin.com/company/export-trading-group"
                   target="_blank"
                   without
@@ -47,8 +47,8 @@ export default function Footer() {
                   >
                     <i className="fab fa-linkedin"></i>
                   </button>
-                </div>
-                <div
+                </a>
+                <a
                   href="https://www.facebook.com/exporttrading"
                   target="_blank"
                   without
@@ -60,7 +60,7 @@ export default function Footer() {
                   >
                     <i className="fab fa-facebook-square"></i>
                   </button>
-                </div>
+                </a>
               </div>
             </div>
             <div className="w-full lg:w-6/12 px-4">
@@ -71,56 +71,24 @@ export default function Footer() {
                   </span>
                   <ul className="list-unstyled">
                     <li>
-                      <div
-                        className="text-blueGray-600 hover:text-blueGray-800 font-semibold block pb-2 text-sm"
-                        href="/"
-                      >
-                        <Link
-                          className="text-white text-sm font-bold leading-relaxed inline-block mr-4 py-2 whitespace-nowrap uppercase"
-                          to="/admin/dashboard"
-                        >
-                          Dashboard
-                        </Link>
-                      </div>
+                      <a className="text-blueGray-600 hover:text-blueGray-800 font-semibold block pb-2 text-sm">
+                        <Link to="/admin/dashboard">Dashboard</Link>
+                      </a>
                     </li>
                     <li>
-                      <div
-                        className="text-blueGray-600 hover:text-blueGray-800 font-semibold block pb-2 text-sm"
-                        href="/"
-                      >
-                        <Link
-                          className="text-white text-sm font-bold leading-relaxed inline-block mr-4 py-2 whitespace-nowrap uppercase"
-                          to="/profile"
-                        >
-                          Profile
-                        </Link>
-                      </div>
+                      <a className="text-blueGray-600 hover:text-blueGray-800 font-semibold block pb-2 text-sm">
+                        <Link to="/profile">Profile</Link>
+                      </a>
                     </li>
                     <li>
-                      <div
-                        className="text-blueGray-600 hover:text-blueGray-800 font-semibold block pb-2 text-sm"
-                        href="/"
-                      >
-                        <Link
-                          className="text-white text-sm font-bold leading-relaxed inline-block mr-4 py-2 whitespace-nowrap uppercase"
-                          to="/admin/settings"
-                        >
-                          Settings
-                        </Link>
-                      </div>
+                      <a className="text-blueGray-600 hover:text-blueGray-800 font-semibold block pb-2 text-sm">
+                        <Link to="/admin/settings">Settings</Link>
+                      </a>
                     </li>
                     <li>
-                      <div
-                        className="text-blueGray-600 hover:text-blueGray-800 font-semibold block pb-2 text-sm"
-                        href="/"
-                      >
-                        <Link
-                          className="text-white text-sm font-bold leading-relaxed inline-block mr-4 py-2 whitespace-nowrap uppercase"
-                          to="/admin/tables"
-                        >
-                          Tablas
-                        </Link>
-                      </div>
+                      <a className="text-blueGray-600 hover:text-blueGray-800 font-semibold block pb-2 text-sm">
+                        <Link to="/admin/tables">Tablas</Link>
+                      </a>
                     </li>
                   </ul>
                 </div>
