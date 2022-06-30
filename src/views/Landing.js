@@ -194,10 +194,15 @@ export default function Landing() {
                   <div className="relative flex flex-col min-w-0 break-words bg-white w-full mb-8 shadow-lg rounded-lg">
                     <div className="px-4 py-5 flex-auto">
                       <div className="text-white p-3 text-center inline-flex items-center justify-center w-12 h-12 mb-5 shadow-lg rounded-full bg-red-400">
-                        <i className="fas fa-retweet"></i>
+                        <i className="fas fa-equals"></i>
                       </div>
-                      <h6 className="text-xl font-semibold"></h6>
-                      <p className="mt-2 mb-4 text-blueGray-500"></p>
+                      <h6 className="text-xl font-semibold">Igualdad </h6>
+
+                      <p className="mt-2 mb-4 text-blueGray-500">
+                        Fomentar un lugar de trabajo inclusivo y equitativo,
+                        sobre la base de nuestro principio orientado a la
+                        familia.
+                      </p>
                     </div>
                   </div>
                 </div>{" "}
@@ -207,10 +212,16 @@ export default function Landing() {
                   <div className="relative flex flex-col min-w-0 break-words bg-white w-full mb-8 shadow-lg rounded-lg">
                     <div className="px-4 py-5 flex-auto">
                       <div className="text-white p-3 text-center inline-flex items-center justify-center w-12 h-12 mb-5 shadow-lg rounded-full bg-lightBlue-400">
-                        <i className="fas fa-fingerprint"></i>
+                        <i class="fas fa-globe"></i>
                       </div>
-                      <h6 className="text-xl font-semibold"></h6>
-                      <p className="mt-2 mb-4 text-blueGray-500"></p>
+                      <h6 className="text-xl font-semibold">
+                        La vida en la tierra
+                      </h6>
+                      <p className="mt-2 mb-4 text-blueGray-500">
+                        Creación de valor de los productos mediante el
+                        procesamiento y la adopción de procesos de producción
+                        responsables
+                      </p>
                     </div>
                   </div>
                 </div>
@@ -312,7 +323,7 @@ export default function Landing() {
                 <div className="w-full md:w-4/12 ml-auto mr-auto px-4">
                   <img
                     alt="ship"
-                    src="logo512.png"
+                    src={require("assets/img/logo512.png").default}
                     className="w-60 h-auto mt-10 ml-20 "
                   />
                 </div>

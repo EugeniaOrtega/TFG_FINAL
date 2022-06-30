@@ -44,7 +44,7 @@ const UserDropdown = () => {
             <img
               alt="..."
               className="w-full rounded-full align-middle border-none shadow-lg"
-              src={user.photoURL}
+              src={user.photoURL || require("assets/img/default.png").default}
             />
           </span>
         </div>

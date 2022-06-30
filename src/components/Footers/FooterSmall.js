@@ -1,4 +1,5 @@
 import React from "react";
+import { Fade } from "react-reveal";
 
 export default function FooterSmall(props) {
   return (
@@ -13,50 +14,49 @@ export default function FooterSmall(props) {
         <div className="container mx-auto px-4">
           <hr className="mb-6 border-b-1 border-blueGray-600" />
           <div className="flex flex-wrap items-center md:justify-between justify-center">
-            <div className="w-full md:w-4/12 px-4">
-              <div className="text-sm text-blueGray-500 font-semibold py-1 text-center md:text-left">
-                Copyright © {new Date().getFullYear()}{" "}
-                <div className="text-white hover:text-blueGray-300 text-sm font-semibold py-1">
-                  Creative Tim
+            <Fade right>
+              <div className="w-full md:w-4/12 px-4">
+                <div className="text-sm text-white font-semibold py-1 text-center md:text-left">
+                  Copyright © {new Date().getFullYear()}
+                  <div className="text-white  text-sm font-semibold py-1">
+                    Creado por {""}Eugenia Ortega
+                  </div>
                 </div>
               </div>
-            </div>
-            <div className="w-full md:w-8/12 px-4">
-              <ul className="flex flex-wrap list-none md:justify-end  justify-center">
-                <li>
+            </Fade>
+            <Fade left>
+              <div className="w-full lg:w-6/12 px-4 flex justify-end">
+                <div className="mt-6 lg:mb-0 mb-6">
                   <a
-                    href="https://www.creative-tim.com?ref=nr-footer-small"
-                    className="text-white hover:text-blueGray-300 text-sm font-semibold block py-1 px-3"
+                    href="/https://www.linkedin.com/company/export-trading-group"
+                    target="_blank"
+                    without
+                    rel="noreferrer"
                   >
-                    Creative Tim
+                    {" "}
+                    <button
+                      className="bg-white text-lightBlue-400 shadow-lg font-normal h-10 w-10 items-center justify-center align-center rounded-full outline-none focus:outline-none mr-2"
+                      type="button"
+                    >
+                      <i className="fab fa-linkedin"></i>
+                    </button>
                   </a>
-                </li>
-                <li>
                   <a
-                    href="https://www.creative-tim.com/presentation?ref=nr-footer-small"
-                    className="text-white hover:text-blueGray-300 text-sm font-semibold block py-1 px-3"
+                    href="https://www.facebook.com/exporttrading"
+                    target="_blank"
+                    without
+                    rel="noreferrer"
                   >
-                    About Us
+                    <button
+                      className="bg-white text-lightBlue-600 shadow-lg font-normal h-10 w-10 items-center justify-center align-center rounded-full outline-none focus:outline-none mr-2"
+                      type="button"
+                    >
+                      <i className="fab fa-facebook-square"></i>
+                    </button>
                   </a>
-                </li>
-                <li>
-                  <a
-                    href="http://blog.creative-tim.com?ref=nr-footer-small"
-                    className="text-white hover:text-blueGray-300 text-sm font-semibold block py-1 px-3"
-                  >
-                    Blog
-                  </a>
-                </li>
-                <li>
-                  <a
-                    href="https://github.com/creativetimofficial/notus-react/blob/main/LICENSE.md?ref=nr-footer-small"
-                    className="text-white hover:text-blueGray-300 text-sm font-semibold block py-1 px-3"
-                  >
-                    MIT License
-                  </a>
-                </li>
-              </ul>
-            </div>
+                </div>
+              </div>
+            </Fade>
           </div>
         </div>
       </footer>

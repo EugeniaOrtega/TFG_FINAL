@@ -1,4 +1,5 @@
 import React from "react";
+import { Fade } from "react-reveal";
 import { Link } from "react-router-dom";
 
 export default function Footer() {
@@ -26,87 +27,94 @@ export default function Footer() {
         </div>
         <div className="container mx-auto px-4">
           <div className="flex flex-wrap text-center lg:text-left">
-            <div className="w-full lg:w-6/12 px-4">
-              <h4 className="text-3xl font-semibold">
-                Siguenos en nuestras redes sociales!
-              </h4>
-              <h5 className="text-lg mt-0 mb-2 text-blueGray-600">
-                De momento solo estamos en :.
-              </h5>
-              <div className="mt-6 lg:mb-0 mb-6">
-                <a
-                  href="/https://www.linkedin.com/company/export-trading-group"
-                  target="_blank"
-                  without
-                  rel="noreferrer"
-                >
-                  {" "}
-                  <button
-                    className="bg-white text-lightBlue-400 shadow-lg font-normal h-10 w-10 items-center justify-center align-center rounded-full outline-none focus:outline-none mr-2"
-                    type="button"
+            <Fade>
+              <div className="w-full lg:w-6/12 px-4">
+                <h4 className="text-3xl font-semibold">
+                  Siguenos en nuestras redes sociales!
+                </h4>
+
+                <div className="mt-6 lg:mb-0 mb-6">
+                  <a
+                    href="/https://www.linkedin.com/company/export-trading-group"
+                    target="_blank"
+                    without
+                    rel="noreferrer"
                   >
-                    <i className="fab fa-linkedin"></i>
-                  </button>
-                </a>
-                <a
-                  href="https://www.facebook.com/exporttrading"
-                  target="_blank"
-                  without
-                  rel="noreferrer"
-                >
-                  <button
-                    className="bg-white text-lightBlue-600 shadow-lg font-normal h-10 w-10 items-center justify-center align-center rounded-full outline-none focus:outline-none mr-2"
-                    type="button"
+                    {" "}
+                    <button
+                      className="bg-white text-lightBlue-400 shadow-lg font-normal h-10 w-10 items-center justify-center align-center rounded-full outline-none focus:outline-none mr-2"
+                      type="button"
+                    >
+                      <i className="fab fa-linkedin"></i>
+                    </button>
+                  </a>
+                  <a
+                    href="https://www.facebook.com/exporttrading"
+                    target="_blank"
+                    without
+                    rel="noreferrer"
                   >
-                    <i className="fab fa-facebook-square"></i>
-                  </button>
-                </a>
+                    <button
+                      className="bg-white text-lightBlue-600 shadow-lg font-normal h-10 w-10 items-center justify-center align-center rounded-full outline-none focus:outline-none mr-2"
+                      type="button"
+                    >
+                      <i className="fab fa-facebook-square"></i>
+                    </button>
+                  </a>
+                </div>
               </div>
-            </div>
-            <div className="w-full lg:w-6/12 px-4">
-              <div className="flex flex-wrap items-top mb-6">
-                <div className="w-full lg:w-4/12 px-4 ml-auto">
-                  <span className="block uppercase text-blueGray-500 text-sm font-semibold mb-2">
-                    Enlaces de pagina
-                  </span>
-                  <ul className="list-unstyled">
-                    <li>
-                      <a className="text-blueGray-600 hover:text-blueGray-800 font-semibold block pb-2 text-sm">
-                        <Link to="/admin/dashboard">Dashboard</Link>
-                      </a>
-                    </li>
-                    <li>
-                      <a className="text-blueGray-600 hover:text-blueGray-800 font-semibold block pb-2 text-sm">
-                        <Link to="/profile">Profile</Link>
-                      </a>
-                    </li>
-                    <li>
-                      <a className="text-blueGray-600 hover:text-blueGray-800 font-semibold block pb-2 text-sm">
-                        <Link to="/admin/settings">Settings</Link>
-                      </a>
-                    </li>
-                    <li>
-                      <a className="text-blueGray-600 hover:text-blueGray-800 font-semibold block pb-2 text-sm">
-                        <Link to="/admin/tables">Tablas</Link>
-                      </a>
-                    </li>
-                  </ul>
+            </Fade>
+            <Fade top>
+              <div className="w-full lg:w-6/12 px-4">
+                <div className="flex flex-wrap items-top mb-6">
+                  <div className="w-full lg:w-4/12 px-4 ml-auto">
+                    <span className="block uppercase text-blueGray-500 text-sm font-semibold mb-2">
+                      Enlaces de pagina
+                    </span>
+                    <ul className="list-unstyled">
+                      <li>
+                        <a className="text-blueGray-600 hover:text-blueGray-800 font-semibold block pb-2 text-sm">
+                          <Link to="/admin/dashboard">Dashboard</Link>
+                        </a>
+                      </li>
+                      <li>
+                        <a className="text-blueGray-600 hover:text-blueGray-800 font-semibold block pb-2 text-sm">
+                          <Link to="/profile">Profile</Link>
+                        </a>
+                      </li>
+                      <li>
+                        <a className="text-blueGray-600 hover:text-blueGray-800 font-semibold block pb-2 text-sm">
+                          <Link to="/admin/settings">Settings</Link>
+                        </a>
+                      </li>
+                      <li>
+                        <a className="text-blueGray-600 hover:text-blueGray-800 font-semibold block pb-2 text-sm">
+                          <Link to="/admin/tables">Tablas</Link>
+                        </a>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </Fade>
+          </div>
+          <Fade bottom>
+            <hr className="my-6 border-blueGray-300" />
+          </Fade>
+
+          <Fade left>
+            <div className="flex flex-wrap items-center md:justify-between justify-center">
+              <div className="w-full md:w-4/12 px-4 mx-auto text-center">
+                <div className="text-sm text-blueGray-500 font-semibold py-1">
+                  Copyright © {new Date().getFullYear()} Creado por{" "}
+                  <div className="text-blueGray-500 hover:text-blueGray-800">
+                    Eugenia Ortega
+                  </div>
+                  .
                 </div>
               </div>
             </div>
-          </div>
-          <hr className="my-6 border-blueGray-300" />
-          <div className="flex flex-wrap items-center md:justify-between justify-center">
-            <div className="w-full md:w-4/12 px-4 mx-auto text-center">
-              <div className="text-sm text-blueGray-500 font-semibold py-1">
-                Copyright © {new Date().getFullYear()} Creado por{" "}
-                <div className="text-blueGray-500 hover:text-blueGray-800">
-                  Eugenia Ortega
-                </div>
-                .
-              </div>
-            </div>
-          </div>
+          </Fade>
         </div>
       </footer>
     </>
