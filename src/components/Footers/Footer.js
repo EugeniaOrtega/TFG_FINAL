@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 export default function Footer() {
   return (
@@ -33,7 +34,7 @@ export default function Footer() {
                 De momento solo estamos en :.
               </h5>
               <div className="mt-6 lg:mb-0 mb-6">
-                <a
+                <div
                   href="/https://www.linkedin.com/company/export-trading-group"
                   target="_blank"
                   without
@@ -46,8 +47,8 @@ export default function Footer() {
                   >
                     <i className="fab fa-linkedin"></i>
                   </button>
-                </a>
-                <a
+                </div>
+                <div
                   href="https://www.facebook.com/exporttrading"
                   target="_blank"
                   without
@@ -59,7 +60,7 @@ export default function Footer() {
                   >
                     <i className="fab fa-facebook-square"></i>
                   </button>
-                </a>
+                </div>
               </div>
             </div>
             <div className="w-full lg:w-6/12 px-4">
@@ -70,36 +71,56 @@ export default function Footer() {
                   </span>
                   <ul className="list-unstyled">
                     <li>
-                      <a
+                      <div
                         className="text-blueGray-600 hover:text-blueGray-800 font-semibold block pb-2 text-sm"
-                        href="/admin/dashboard"
+                        href="/"
                       >
-                        Dashboard
-                      </a>
+                        <Link
+                          className="text-white text-sm font-bold leading-relaxed inline-block mr-4 py-2 whitespace-nowrap uppercase"
+                          to="/admin/dashboard"
+                        >
+                          Dashboard
+                        </Link>
+                      </div>
                     </li>
                     <li>
-                      <a
+                      <div
                         className="text-blueGray-600 hover:text-blueGray-800 font-semibold block pb-2 text-sm"
-                        href="/profile"
+                        href="/"
                       >
-                        Profile
-                      </a>
+                        <Link
+                          className="text-white text-sm font-bold leading-relaxed inline-block mr-4 py-2 whitespace-nowrap uppercase"
+                          to="/profile"
+                        >
+                          Profile
+                        </Link>
+                      </div>
                     </li>
                     <li>
-                      <a
+                      <div
                         className="text-blueGray-600 hover:text-blueGray-800 font-semibold block pb-2 text-sm"
-                        href="/admin/settings"
+                        href="/"
                       >
-                        Settings
-                      </a>
+                        <Link
+                          className="text-white text-sm font-bold leading-relaxed inline-block mr-4 py-2 whitespace-nowrap uppercase"
+                          to="/admin/settings"
+                        >
+                          Settings
+                        </Link>
+                      </div>
                     </li>
                     <li>
-                      <a
+                      <div
                         className="text-blueGray-600 hover:text-blueGray-800 font-semibold block pb-2 text-sm"
-                        href="/admin/tables"
+                        href="/"
                       >
-                        Tablas
-                      </a>
+                        <Link
+                          className="text-white text-sm font-bold leading-relaxed inline-block mr-4 py-2 whitespace-nowrap uppercase"
+                          to="/admin/tables"
+                        >
+                          Tablas
+                        </Link>
+                      </div>
                     </li>
                   </ul>
                 </div>
@@ -111,12 +132,9 @@ export default function Footer() {
             <div className="w-full md:w-4/12 px-4 mx-auto text-center">
               <div className="text-sm text-blueGray-500 font-semibold py-1">
                 Copyright © {new Date().getFullYear()} Creado por{" "}
-                <a
-                  href="https://www.creative-tim.com?ref=nr-footer"
-                  className="text-blueGray-500 hover:text-blueGray-800"
-                >
+                <div className="text-blueGray-500 hover:text-blueGray-800">
                   Eugenia Ortega
-                </a>
+                </div>
                 .
               </div>
             </div>

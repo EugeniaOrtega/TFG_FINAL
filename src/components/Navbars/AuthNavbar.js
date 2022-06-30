@@ -44,13 +44,12 @@ export default function Navbar(props) {
                 </div>
               </li>
               <li className="flex items-center">
-                <a
-                  className="lg:text-white lg:hover:text-blueGray-200 text-blueGray-700 px-3 py-4 lg:py-2 flex items-center text-xs uppercase font-bold"
-                  href="auth/register"
-                >
-                  <i className="lg:text-blueGray-200 text-blueGray-400 fas fa-user-plus text-lg leading-lg mr-2" />{" "}
-                  Registro
-                </a>
+                <div className="lg:text-white lg:hover:text-blueGray-200 text-blueGray-700 px-3 py-4 lg:py-2 flex items-center text-xs uppercase font-bold">
+                  <Link to={"/auth/register"}>
+                    <i className="lg:text-blueGray-200 text-blueGray-400 fas fa-user-plus text-lg leading-lg mr-2" />{" "}
+                    Registro
+                  </Link>
+                </div>
               </li>
             </ul>
           </div>

@@ -2,6 +2,7 @@ import React from "react";
 import { createPopper } from "@popperjs/core";
 import { useAuth } from "context/authContext";
 import { useHistory } from "react-router";
+import { Link } from "react-router-dom";
 
 const UserDropdown = () => {
   // dropdown props
@@ -17,7 +18,7 @@ const UserDropdown = () => {
   const closeDropdownPopover = () => {
     setDropdownPopoverShow(false);
   };
-  const { user, logout, loading } = useAuth();
+  const { user, logout } = useAuth();
   console.log(user);
   const history = useHistory();
   const handleLogout = async () => {
@@ -30,9 +31,8 @@ const UserDropdown = () => {
   };
   return (
     <>
-      <a
+      <div
         className="text-blueGray-500 block"
-        href="#pablo"
         ref={btnDropdownRef}
         onClick={(e) => {
           e.preventDefault();
@@ -44,11 +44,11 @@ const UserDropdown = () => {
             <img
               alt="..."
               className="w-full rounded-full align-middle border-none shadow-lg"
-              src=""
+              src={user.photoURL}
             />
           </span>
         </div>
-      </a>
+      </div>
       <div
         ref={popoverDropdownRef}
         className={
@@ -56,21 +56,27 @@ const UserDropdown = () => {
           "bg-white text-base z-50 float-left py-2 list-none text-left rounded shadow-lg min-w-48"
         }
       >
-        <a
-          className="lg:text-black-200 lg:hover:text-blueGray-200 text-black-300 px-3 py-4 lg:py-2 flex items-center text-xs uppercase font-bold"
-          href="/profile"
-        >
-          <i className="lg:text-blueGray-800 text-blueGray-800 fas fa-user text-lg leading-lg mr-2" />{" "}
-          Perfil
-        </a>
-        <a
+        <div className="lg:text-black-200 lg:hover:text-blueGray-200 text-black-300 px-3 py-4 lg:py-2 flex items-center text-xs uppercase font-bold">
+          <Link
+            className="text-white text-sm font-bold leading-relaxed inline-block mr-4 py-2 whitespace-nowrap uppercase"
+            to="/profile"
+          >
+            <i className="lg:text-blueGray-800 text-blueGray-800 fas fa-user text-lg leading-lg mr-2" />{" "}
+            Perfil
+          </Link>
+        </div>
+        <div
           className="lg:text-black-200 lg:hover:text-blueGray-200 text-black-300 px-3 py-4 lg:py-2 flex items-center text-xs uppercase font-bold"
           onClick={handleLogout}
-          href="/"
         >
-          <i className="lg:text-blueGray-800 text-blueGray-800 fas fa-sign-out-alt text-lg leading-lg mr-2" />{" "}
-          Cerrar sesion
-        </a>
+          <Link
+            className="text-white text-sm font-bold leading-relaxed inline-block mr-4 py-2 whitespace-nowrap uppercase"
+            to="/"
+          >
+            <i className="lg:text-blueGray-800 text-blueGray-800 fas fa-sign-out-alt text-lg leading-lg mr-2" />{" "}
+            Cerrar sesion
+          </Link>
+        </div>
       </div>
     </>
   );

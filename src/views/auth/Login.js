@@ -109,9 +109,11 @@ export default function Login() {
                   </div>
                   <div>
                     <label className="inline-flex items-center cursor-pointer">
-                      <a className="text-gray-500" href="/resetPassword">
-                        ¿Has olvidado la contraseña?
-                      </a>
+                      <div className="text-gray-500">
+                        <Link to={"/resetPassword"}>
+                          ¿Has olvidado la contraseña?
+                        </Link>
+                      </div>
                     </label>
                   </div>
                   <div className="text-center mt-6">
