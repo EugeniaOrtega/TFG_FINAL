@@ -28,10 +28,7 @@ export default function Navbar(props) {
             <ul className="flex flex-col lg:flex-row list-none mr-auto">
               <li className="flex items-center">
                 <div className="hover:text-white text-white px-3 py-4 lg:py-2 flex items-center text-xs uppercase font-bold lg:hover:text-blueGray-200">
-                  <Link
-                    className="text-white text-sm font-bold leading-relaxed inline-block mr-4 py-2 whitespace-nowrap uppercase"
-                    to="/"
-                  >
+                  <Link to="/">
                     <i className="text-blueGray-200 fas fa-home text-lg leading-lg mr-2" />{" "}
                     Inicio
                   </Link>
@@ -39,10 +36,7 @@ export default function Navbar(props) {
               </li>
               <li className="flex items-center">
                 <a className="hover:text-white text-white px-3 py-4 lg:py-2 flex items-center text-xs uppercase font-bold lg:hover:text-blueGray-200">
-                  <Link
-                    className="text-white text-sm font-bold leading-relaxed inline-block mr-4 py-2 whitespace-nowrap uppercase"
-                    to="/admin/settings"
-                  >
+                  <Link to="/admin/settings">
                     <i className="text-blueGray-200 fas fa-cog text-lg leading-lg mr-2" />{" "}
                     Configuración
                   </Link>
@@ -50,10 +44,7 @@ export default function Navbar(props) {
               </li>
               <li className="flex items-center">
                 <a className="hover:text-white text-white px-3 py-4 lg:py-2 flex items-center text-xs uppercase font-bold lg:hover:text-blueGray-200">
-                  <Link
-                    className="text-white text-sm font-bold leading-relaxed inline-block mr-4 py-2 whitespace-nowrap uppercase"
-                    to="/admin/dashboard"
-                  >
+                  <Link to="/admin/dashboard">
                     <i className="text-blueGray-200 fas fa-chart-line text-lg leading-lg mr-2" />{" "}
                     Dashboard
                   </Link>
@@ -61,10 +52,7 @@ export default function Navbar(props) {
               </li>
               <li className="flex items-center">
                 <a className="hover:text-white text-white px-3 py-4 lg:py-2 flex items-center text-xs uppercase font-bold lg:hover:text-blueGray-200">
-                  <Link
-                    className="text-white text-sm font-bold leading-relaxed inline-block mr-4 py-2 whitespace-nowrap uppercase"
-                    to="/admin/tables"
-                  >
+                  <Link to="/admin/tables">
                     <i className="text-blueGray-200 fas fa-table text-lg leading-lg mr-2" />{" "}
                     Tablas
                   </Link>
@@ -72,10 +60,7 @@ export default function Navbar(props) {
               </li>
               <li className="flex items-center">
                 <a className="hover:text-white text-white px-3 py-4 lg:py-2 flex items-center text-xs uppercase font-bold lg:hover:text-blueGray-200">
-                  <Link
-                    className="text-white text-sm font-bold leading-relaxed inline-block mr-4 py-2 whitespace-nowrap uppercase"
-                    to="/admin/maps"
-                  >
+                  <Link to="/admin/maps">
                     <i className="text-blueGray-200 far fa-map text-lg leading-lg mr-2" />{" "}
                     Mapas
                   </Link>
