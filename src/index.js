@@ -1,6 +1,6 @@
 import React from "react";
 import ReactDOM from "react-dom";
-import { Route, Switch, Redirect, HashRouter } from "react-router-dom";
+import { BrowserRouter, Route, Switch, Redirect } from "react-router-dom";
 
 import "@fortawesome/fontawesome-free/css/all.min.css";
 import "assets/styles/tailwind.css";
@@ -17,7 +17,7 @@ import Profile from "views/Profile.js";
 import { AuthProvider } from "context/authContext";
 
 ReactDOM.render(
-  <HashRouter>
+  <BrowserRouter>
     <AuthProvider>
       <Switch>
         {/* add routes with layouts */}
@@ -32,6 +32,6 @@ ReactDOM.render(
         <Redirect from="*" to="/" />
       </Switch>
     </AuthProvider>
-  </HashRouter>,
+  </BrowserRouter>,
   document.getElementById("root")
 );
