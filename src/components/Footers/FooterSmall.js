@@ -19,7 +19,7 @@ export default function FooterSmall(props) {
                 <div className="text-sm text-white font-semibold py-1 text-center md:text-left">
                   Copyright © {new Date().getFullYear()}
                   <div className="text-white  text-sm font-semibold py-1">
-                    Creado por {""}Eugenia Ortega
+                    Creado por {""} Tomas Salcedo
                   </div>
                 </div>
               </div>
